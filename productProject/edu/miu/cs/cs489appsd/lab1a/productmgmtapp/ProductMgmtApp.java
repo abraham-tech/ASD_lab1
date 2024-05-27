@@ -18,10 +18,8 @@ public class ProductMgmtApp {
     }
 
     public static void printProducts(Product[] products) {
-        // Sort products by name in ascending order
         Arrays.sort(products, Comparator.comparing(Product::getName));
 
-        // Print products in JSON format
         System.out.println("Printed in JSON Format:");
         System.out.println("[");
         System.out.print(
@@ -35,7 +33,6 @@ public class ProductMgmtApp {
 
         System.out.println("-------------------------------------------");
 
-        // Print products in XML format
         System.out.println("Printed in XML Format:");
         System.out.println("<?xml version=\"1.0\"?>");
         System.out.println("<products>");
@@ -47,7 +44,6 @@ public class ProductMgmtApp {
 
         System.out.println("-------------------------------------------");
 
-        // Print products in CSV format
         System.out.println("Printed in Comma-Separated Value(CSV) Format:");
         System.out.println("ProductId,Name,DateSupplied,QuantityInStock,UnitPrice");
         Arrays.stream(products)

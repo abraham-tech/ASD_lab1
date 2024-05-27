@@ -12,7 +12,6 @@ public class Product {
 
     private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
-    // Default constructor
     public Product() {
         this.productId = 0;
         this.name = "";
@@ -21,7 +20,6 @@ public class Product {
         this.unitPrice = 0.0;
     }
 
-    // Constructor with all fields
     public Product(long productId, String name, String dateSupplied, int quantityInStock, double unitPrice) {
         this.productId = productId;
         this.name = name;
@@ -30,7 +28,6 @@ public class Product {
         this.unitPrice = unitPrice;
     }
 
-    // Constructor without dateSupplied
     public Product(long productId, String name, int quantityInStock, double unitPrice) {
         this.productId = productId;
         this.name = name;
